@@ -1,10 +1,22 @@
 # API-MSCONTAS
 
-> A api node project
+> API para gestão de Contas de Pequenos Negócios, utilizando as tecnologias Node.JS, Express.JS e MongoDB.
 
 ## Build Setup
 
 ``` bash
+#Create an .env File
+#For Windows
+copy NUL .env 
+#For Linux
+touch .env 
+
+#add the environment variables needed to boot the server:
+JWT_SECRETKEY=1234567890
+MONGO_DB=mongodb://localhost:27017/db-api
+AUTENTICATION=true
+HTTPLOG=false
+
 # install dependencies
 npm install
 
