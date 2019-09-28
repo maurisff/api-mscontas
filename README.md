@@ -11,7 +11,7 @@ copy NUL .env
 #For Linux
 touch .env 
 
-#add the environment variables needed to boot the server:
+#Add the environment variables needed to boot the server into the .env file:
 JWT_SECRETKEY=1234567890
 MONGO_DB=mongodb://localhost:27017/db-api
 AUTENTICATION=true
