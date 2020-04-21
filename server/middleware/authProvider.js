@@ -20,7 +20,6 @@ module.exports = async function (req, res, next) {
   const token = req.headers['x-access-token'];
   req.headers.negocioId = null;
   req.headers.usuarioId = null;
-  console.log(`req.path: ${req.path}`);
   // retorna server online
   if (req.method === 'OPTIONS') {
     res.status(200).json(new ResponseInfor(true, `server only ${new Date().toJSON()}`));
